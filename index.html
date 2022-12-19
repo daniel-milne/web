@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Hey!</title>
+</head>
+<body>
+<script>
+document.body.style.backgroundColor = 'black';
+
+var hiImDaniel = document.createElement('div');
+hiImDaniel.innerHTML = 'hi im daniel';
+hiImDaniel.style.color = 'white';
+hiImDaniel.style.fontSize = '50px';
+hiImDaniel.style.position = 'absolute';
+hiImDaniel.style.top = '50%';
+hiImDaniel.style.left = '50%';
+hiImDaniel.style.transform = 'translate(-50%, -50%)';
+document.body.appendChild(hiImDaniel);
+
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var i = 0;
+setInterval(function() {
+  hiImDaniel.style.color = colors[i];
+  i = (i + 1) % colors.length;
+}, 100);
+
+var moreComingSoon = document.createElement('div');
+moreComingSoon.innerHTML = 'more coming soon';
+moreComingSoon.style.color = 'white';
+moreComingSoon.style.fontSize = '20px';
+moreComingSoon.style.position = 'absolute';
+moreComingSoon.style.top = '70%';
+moreComingSoon.style.left = '50%';
+moreComingSoon.style.transform = 'translate(-50%, -50%)';
+document.body.appendChild(moreComingSoon);
+
+
+moreComingSoon.style.top = '60%';
+
+document.body.style.margin = '0';
+document.body.style.padding = '0';
+
+document.body.style.overflow = 'hidden';
+document.body.style.height = '100vh';
+document.body.style.width = '100vw';
+document.body.style.display = 'flex';
+document.body.style.justifyContent = 'center';
+document.body.style.alignItems = 'center';
+document.body.style.flexDirection = 'column';
+</script>
+</body>
+</html>
